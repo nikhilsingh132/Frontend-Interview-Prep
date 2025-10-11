@@ -18,3 +18,7 @@
 // Following the memory creation phase, the JavaScript engine executes the code 
 // line by line. It assigns the actual values to variables and invokes functions 
 // as it encounters them.
+
+
+// As soon as Memory and Code Execution context is create then it is sent to 
+// call stack and one by one each execution context is executed.
