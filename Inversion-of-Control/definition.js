@@ -6,6 +6,8 @@
 // executing the second part of our program. Passing the control of one function to
 // another function can lead to many problems.
 
+/*-----------------------------------------------------------------------------------*/
+
 //Problems it might cause:
 
 // 1. A Callback may be called multiple times.

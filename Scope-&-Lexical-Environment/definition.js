@@ -16,14 +16,19 @@
 // of a module are scoped to that module and are not globally accessible unless explicitly
 // exported.
 
+/*-----------------------------------------------------------------------------------*/
+
 // Lexical Environment:
 // Lexical Environment is the environment in which a variable or function is declared.
 // Lexical environment is the local memory along with lexical environment of its parent.
 
 // Lexical Environment = local memory + lexical environment of its parent
 
+/*-----------------------------------------------------------------------------------*/
+
 // Scope Chain:
 // Scope chain is the chain of lexical environments that are used to resolve variable
 // and function references.
 
-// Scope chain = lexical environment of current execution context + lexical environment of parent execution context
+// Scope chain = lexical environment of current execution context + lexical environment of 
+// parent execution context

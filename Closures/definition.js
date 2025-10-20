@@ -7,6 +7,7 @@
 
 // Closure = function along with its lexical environment bundled together
 
+/*-----------------------------------------------------------------------------------*/
 
 // Uses of Closures:
 

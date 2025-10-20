@@ -5,6 +5,7 @@
 // functions. This nesting makes the code difficult to read, understand, and maintain, 
 // resembling a pyramid shape due to the increasing indentation levels.
 
+/*-----------------------------------------------------------------------------------*/
 
 // Key characteristics of callback hell:
 

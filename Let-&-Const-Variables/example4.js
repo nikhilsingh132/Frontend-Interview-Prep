@@ -15,7 +15,8 @@ console.log(b);
 let b = 10;
 
 // Output:
-// Uncaught ReferenceError: Cannot access 'b' before initialization as 'b' is in temporal dead zone (TDZ)
+// Uncaught ReferenceError: Cannot access 'b' before initialization as 'b'
+// is in temporal dead zone (TDZ)
 
 /*-----------------------------------------------------------------------------------*/
 
