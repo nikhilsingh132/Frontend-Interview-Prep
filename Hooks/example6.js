@@ -1,6 +1,6 @@
 // Example: useMemo
 
-import React, { useState, useMemo } from "react";
+import { useState, useMemo } from "react";
 
 // A massive list of 10,000 items
 const bigList = new Array(10000).fill(null).map((_, i) => `Item ${i}`);
@@ -50,20 +50,19 @@ export default App;
 // This can take time to filter the list, but it only does so when the list changes.
 // This is a solution to the problem of re-rendering the component when the theme changes.
 
-
 // PROBLEM:
 // The "Problem" Code (Without useMemo)
-// First, let's see the problem. Every time we click "Toggle Theme," our app re-renders, and 
-// it re-filters the entire 10,000-item list, even though the list hasn't changed. This is a 
+// First, let's see the problem. Every time we click "Toggle Theme," our app re-renders, and
+// it re-filters the entire 10,000-item list, even though the list hasn't changed. This is a
 // huge waste and makes the app feel slow.
 
-// Result: When you run this, "Filtering 10,000 items..." logs to the console on every single 
-// click of "Toggle Theme." This is very inefficient. Which means it is checking the list 
+// Result: When you run this, "Filtering 10,000 items..." logs to the console on every single
+// click of "Toggle Theme." This is very inefficient. Which means it is checking the list
 // every time the theme changes.
 
 // SOLUTION:
 // We'll wrap the expensive filter operation in useMemo. We'll give it [bigList] as a dependency.
-// This tells React: "Only re-run this filter if bigList changes. If anything else (like theme) 
+// This tells React: "Only re-run this filter if bigList changes. If anything else (like theme)
 // changes, just give me the old, saved value."
-// Result: When you run this, "Filtering 10,000 items..." logs to the console only once on the 
+// Result: When you run this, "Filtering 10,000 items..." logs to the console only once on the
 // first render. It doesn't log again when we toggle the theme.
